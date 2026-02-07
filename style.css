@@ -1,0 +1,231 @@
+/* Reset default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main Page */
+.main-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #FFD6E0 16.83%, #66A6FF 78.85%);
+}
+
+/* Header Container */
+.header-container {
+  width: 100%;
+  height: 186px;
+  background: #1F2937;   /* dark header */         
+  flex-direction: row;    /* logo left, text right */
+  align-items: flex-start; /* top-align everything */
+  padding: 20px 50px;
+  gap: 20px;              /* space between logo and text */
+}
+
+/* Logo */
+/* wwlogo 1 */
+.ww-logo{
+position: absolute;
+width: 300px;
+height: 200px;
+left: -45px;
+top: -59px;
+background: url(wwlogo.png);
+background-size: cover; /* Ensure the logo scales properly */
+}
+
+
+
+/* Title */
+.header-title {
+ /* Whispered wisdom */
+
+position: absolute;
+width: 444px;
+height: 63px;
+left: 129px;
+top: 43px;
+
+font-family: 'Jacques Francois';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 63px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+/* Subtitle */
+.header-subtitle {
+ /* Grow your mind with gentle words */
+
+position: absolute;
+width: 399px;
+height: 15px;
+left: 151px;
+top: 106px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+.cloud {
+  position: relative;       /* make quote/author relative to cloud */
+  width: 526.43px;
+  height: 247.81px;
+  left: calc(50% - 526.43px/2 - 17.3px);
+  top: 230px;
+  background: #FFE8EF;
+  border: 1px solid #640769;
+  box-shadow: 0px 4px 4px #8F2494;
+  border-radius: 1px;
+  transform: rotate(0.25deg);
+
+  display: flex;            /* stack quote + author vertically */
+  flex-direction: column;
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically in cloud */
+  padding: 20px;
+}
+
+
+.cloud #quote {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #510F05;
+  text-align: center;
+  margin-bottom: 10px;      /* space between quote and author */
+}
+
+
+.cloud #author {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #510F05;
+  text-align: center;
+}
+
+
+.girl{
+ /* girl 1 */
+position: absolute;
+width: 178px;
+height: 267px;
+left: 937px;
+top: 470px;
+
+background: url(girl.png);
+background-size: cover; /* Ensure the image scales properly */
+}
+
+#button{
+ /* Frame 49 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 26px 52px;
+gap: 10px;
+
+position: absolute;
+width: 315px;
+height: 84px;
+left: 580px;
+top: 565px;
+
+background: radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.413) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #D768FF;
+box-shadow: inset -3px -4px 7px rgba(255, 255, 255, 0.15);
+border: 1px solid #8F2494;
+border-radius: 30px;
+}
+
+
+
+
+
+#button:hover {
+  background-color: #CF9FFF
+}
+
+#button h4 {
+/* Get your wisdom of the day */
+
+width: 220px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+text-align: center;
+line-height: 19px;
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .header-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .header-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+ .girl {
+    width: 25%;       /* larger relative size on mobile */
+    right: 2%;
+    bottom: 8%;
+  }
+
+  .button {
+    width: 60%;       /* fill more space on mobile */
+    padding: 16px 0;
+  }
+  
+}
