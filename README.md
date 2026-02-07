@@ -32,6 +32,8 @@ Tools: VS Code, Git & GitHub
 
 Random Quote Generator: Fetches motivational quotes dynamically via API.
 
+Note: The code cannot be copied or used and is licenced under Syeda Nizalia
+
 Custom Illustrations: Friendly character and pastel aesthetic.
 
 Hover Effects: Button changes color when hovered for a playful interaction.
