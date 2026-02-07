@@ -14,6 +14,8 @@ Includes a custom character illustration to enhance the playful aesthetic.
 
 Designed entirely on Figma before implementation for UI consistency.
 
+Check out the project here: https://whispered-wisdom.vercel.app/
+
 <img width="1901" height="892" alt="image" src="https://github.com/user-attachments/assets/c8018657-c0c6-463d-8f87-aa3b2252227c" />
 
 🛠 Tech Stack
