@@ -38,4 +38,4 @@ Hover Effects: Button changes color when hovered for a playful interaction.
 
 Cloud Container: Quote and author neatly stacked in a visually appealing container.
 
-Note: The code cannot be copied or used and is licenced under Syeda Nizalia
+Note: The code cannot be copied or used and is licenced under @Syeda Nizalia 2026
